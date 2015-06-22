@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ShoppingSmartTest" Class="ShoppingSmartDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=bamboo.arvixe.com;Initial Catalog=ShoppingSmartTest;Persist Security Info=True;User ID=lee1" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ShoppingSmartTestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.cat" Member="cats">
+    <Type Name="cat">
+      <Column Name="prodid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="catid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="product_cat" Member="product" ThisKey="prodid" OtherKey="id" Type="product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.largeimages" Member="largeimages">
+    <Type Name="largeimage">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.products" Member="products">
+    <Type Name="product">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="largeimg" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="smallimg" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="largeimgwidth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="largeimgheight" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="smallimgwidth" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="smallimgheight" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="company" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="colour" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="product_cat" Member="cats" ThisKey="id" OtherKey="prodid" Type="cat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.smallimages" Member="smallimages">
+    <Type Name="smallimage">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

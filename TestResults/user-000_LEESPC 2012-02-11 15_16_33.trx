@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8b5dae9c-0464-472b-ae78-16108f916323" name="user-000@LEESPC 2012-02-11 15:16:33" runUser="LEESPC\user-000" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f3d9614-5777-4933-bafc-e0100a2837a7">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="user-000_LEESPC 2012-02-11 15_16_33">
+      <DeploymentItem filename="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\bin\ShoppingSmart.dll" />
+      <DeploymentItem filename="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\lib\NHunspell.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-11T15:16:33.5420000+13:00" queuing="2012-02-11T15:16:34.1130000+13:00" start="2012-02-11T15:16:34.2380000+13:00" finish="2012-02-11T15:17:00.9360000+13:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" error="0" failed="7" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="StripHTMLTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="d7258169-f80a-d0ea-907a-a43e2cfe9829">
+      <Execution id="a9dd8865-ffa9-45c1-a896-2fa0217954aa" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StripHTMLTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="DownloadImageTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="51e832d5-4faa-2dc8-ee15-26aafa75734e">
+      <Execution id="41b19414-2092-41d6-b8cb-3ae5bc4c8733" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DownloadImageTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="StripInvalidPathCharsTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="33f0f9a5-ca93-8d2a-043b-3ae7b2436d29">
+      <Execution id="94aeccb4-1ed7-4c2f-a99e-cd487e0bb1b8" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StripInvalidPathCharsTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="StripPunctuationTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="406aa385-c032-0bd9-bf94-0016cab0b037">
+      <Execution id="b5a5c173-6d60-4578-9a16-c7d1f7ada1fb" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StripPunctuationTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="hasCorrectSpellingTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="b174e561-810e-a709-6677-25d8db0e0167">
+      <Execution id="98a57f23-6f45-4dbf-880d-b8123526e5cd" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="hasCorrectSpellingTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="correctSpellingTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="245a35d0-8400-ae08-761d-16c0eb9961d2">
+      <Execution id="c7904168-5f0b-4da3-9713-71e78cdf0908" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="correctSpellingTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="getFirstStringBetweenTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="78f31cee-464a-1fd1-9431-9a2214abd26c">
+      <Execution id="e80b499c-1af0-4ea5-b78d-0f880dc001ed" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getFirstStringBetweenTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="245a35d0-8400-ae08-761d-16c0eb9961d2" executionId="c7904168-5f0b-4da3-9713-71e78cdf0908" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33f0f9a5-ca93-8d2a-043b-3ae7b2436d29" executionId="94aeccb4-1ed7-4c2f-a99e-cd487e0bb1b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="406aa385-c032-0bd9-bf94-0016cab0b037" executionId="b5a5c173-6d60-4578-9a16-c7d1f7ada1fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51e832d5-4faa-2dc8-ee15-26aafa75734e" executionId="41b19414-2092-41d6-b8cb-3ae5bc4c8733" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78f31cee-464a-1fd1-9431-9a2214abd26c" executionId="e80b499c-1af0-4ea5-b78d-0f880dc001ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b174e561-810e-a709-6677-25d8db0e0167" executionId="98a57f23-6f45-4dbf-880d-b8123526e5cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d7258169-f80a-d0ea-907a-a43e2cfe9829" executionId="a9dd8865-ffa9-45c1-a896-2fa0217954aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c7904168-5f0b-4da3-9713-71e78cdf0908" testId="245a35d0-8400-ae08-761d-16c0eb9961d2" testName="correctSpellingTest" computerName="LEESPC" startTime="2012-02-11T15:16:34.3470000+13:00" endTime="2012-02-11T15:16:56.2570000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c7904168-5f0b-4da3-9713-71e78cdf0908">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_correctSpellingTest.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_correctSpellingTest.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="94aeccb4-1ed7-4c2f-a99e-cd487e0bb1b8" testId="33f0f9a5-ca93-8d2a-043b-3ae7b2436d29" testName="StripInvalidPathCharsTest" computerName="LEESPC" startTime="2012-02-11T15:16:56.2590000+13:00" endTime="2012-02-11T15:16:57.5140000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94aeccb4-1ed7-4c2f-a99e-cd487e0bb1b8">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_StripInvalidPathChar.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_StripInvalidPathChar.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="b5a5c173-6d60-4578-9a16-c7d1f7ada1fb" testId="406aa385-c032-0bd9-bf94-0016cab0b037" testName="StripPunctuationTest" computerName="LEESPC" startTime="2012-02-11T15:16:57.5150000+13:00" endTime="2012-02-11T15:16:58.4120000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5a5c173-6d60-4578-9a16-c7d1f7ada1fb">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_StripPunctuationTest.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_StripPunctuationTest.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="41b19414-2092-41d6-b8cb-3ae5bc4c8733" testId="51e832d5-4faa-2dc8-ee15-26aafa75734e" testName="DownloadImageTest" computerName="LEESPC" startTime="2012-02-11T15:16:58.4140000+13:00" endTime="2012-02-11T15:16:58.8400000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41b19414-2092-41d6-b8cb-3ae5bc4c8733">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_DownloadImageTest.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_DownloadImageTest.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="e80b499c-1af0-4ea5-b78d-0f880dc001ed" testId="78f31cee-464a-1fd1-9431-9a2214abd26c" testName="getFirstStringBetweenTest" computerName="LEESPC" startTime="2012-02-11T15:16:58.8450000+13:00" endTime="2012-02-11T15:16:59.5890000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e80b499c-1af0-4ea5-b78d-0f880dc001ed">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_getFirstStringBetwee.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_getFirstStringBetwee.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="98a57f23-6f45-4dbf-880d-b8123526e5cd" testId="b174e561-810e-a709-6677-25d8db0e0167" testName="hasCorrectSpellingTest" computerName="LEESPC" startTime="2012-02-11T15:16:59.5910000+13:00" endTime="2012-02-11T15:17:00.3140000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98a57f23-6f45-4dbf-880d-b8123526e5cd">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_hasCorrectSpellingTe.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_hasCorrectSpellingTe.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="a9dd8865-ffa9-45c1-a896-2fa0217954aa" testId="d7258169-f80a-d0ea-907a-a43e2cfe9829" testName="StripHTMLTest" computerName="LEESPC" startTime="2012-02-11T15:17:00.3150000+13:00" endTime="2012-02-11T15:17:00.8940000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9dd8865-ffa9-45c1-a896-2fa0217954aa">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_StripHTMLTest.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_StripHTMLTest.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>

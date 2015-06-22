@@ -1,0 +1,33 @@
+﻿@model ShoppingSmart.Models.ThumbsModel
+
+@using ShoppingSmart.Utils
+
+@{int i =0;}
+           
+@foreach (ShoppingSmart.Models.product prod in Model.products)
+{ 
+<div class="thumbnail@((i%4==0)?" left":"") ">
+				
+					<div class="horizontal">
+						<div class="product">
+							<a href="@prod.url" style="border:none;" title="@prod.title">
+								<img class="product" src="images/small?name=@(HttpUtility.UrlEncode(prod.smallimg))" alt="@prod.title" />
+							</a>
+							<p class="description">
+								<a class="productTitle" href="@prod.url">@prod.title.Replace("_"," ")</a>
+							</p>
+							<p >
+							</p>
+							<p class="price"><span>@((prod.price==null)? "Price Unknown" : ((int)prod.price).ToPriceFormat()) </span></p>
+						</div>
+<div class="separator"></div>
+<div class="additional-info horizontal">
+
+</div>
+
+
+</div>
+
+</div>
+    i++;
+}

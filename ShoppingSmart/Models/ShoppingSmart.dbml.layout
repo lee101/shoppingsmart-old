@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ShoppingSmart">
+  <DataContextMoniker Name="/ShoppingSmartDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b2749717-d4cc-40b9-b33a-176d609b160a" absoluteBounds="3.375, 2, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ShoppingSmartDataContext/cat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="129ae7aa-f9d5-4661-94f7-24f8926d61da" absoluteBounds="3.39, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88e06630-8dee-4ef3-bd6a-d4ba0e7484f6" absoluteBounds="3.5, 4, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ShoppingSmartDataContext/largeimage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14d16f6a-3a8a-446d-a25b-7e5e464c8b5c" absoluteBounds="3.515, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21a42143-8057-4b3e-ad83-512f183fb8df" absoluteBounds="6.5, 2.125, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/ShoppingSmartDataContext/product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="280e3350-215d-40f8-a12b-e54905f59601" absoluteBounds="6.515, 2.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.5 : 2.75564697265625); (5.375 : 2.75564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ShoppingSmartDataContext/product/product_cat" />
+      <nodes>
+        <classShapeMoniker Id="21a42143-8057-4b3e-ad83-512f183fb8df" />
+        <classShapeMoniker Id="b2749717-d4cc-40b9-b33a-176d609b160a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c481126b-b9aa-4170-8bf2-8227ca4ae2b7" absoluteBounds="1, 3.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ShoppingSmartDataContext/smallimage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca91038a-e6de-4536-b09d-d6729d862e63" absoluteBounds="1.0150000000000001, 3.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

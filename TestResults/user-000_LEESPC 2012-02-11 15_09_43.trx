@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fdd34558-31da-475b-b8c1-33b1e35d8236" name="user-000@LEESPC 2012-02-11 15:09:43" runUser="LEESPC\user-000" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f3d9614-5777-4933-bafc-e0100a2837a7">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="user-000_LEESPC 2012-02-11 15_09_43">
+      <DeploymentItem filename="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll" />
+      <DeploymentItem filename="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\bin\ShoppingSmart.dll" />
+      <DeploymentItem filename="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\lib\NHunspell.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-11T15:09:43.9660000+13:00" queuing="2012-02-11T15:09:46.4380000+13:00" start="2012-02-11T15:09:47.0660000+13:00" finish="2012-02-11T15:09:55.9180000+13:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="hasCorrectSpellingTest" storage="c:\users\user-000\documents\visual studio 2010\projects\shoppingsmart\testshoppingsmart\bin\debug\testshoppingsmart.dll" id="b174e561-810e-a709-6677-25d8db0e0167">
+      <Execution id="e2c9a27c-02c3-48dc-bcaa-5471d17a8b8e" />
+      <TestMethod codeBase="C:/Users/user-000/documents/visual studio 2010/Projects/ShoppingSmart/TestShoppingSmart/bin/Debug/TestShoppingSmart.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestShoppingSmart.SSUtilsTest, TestShoppingSmart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="hasCorrectSpellingTest" />
+      <AspNet webSiteUrl="http://localhost:8018/">
+        <Host pathToWebApp="C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b174e561-810e-a709-6677-25d8db0e0167" executionId="e2c9a27c-02c3-48dc-bcaa-5471d17a8b8e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e2c9a27c-02c3-48dc-bcaa-5471d17a8b8e" testId="b174e561-810e-a709-6677-25d8db0e0167" testName="hasCorrectSpellingTest" computerName="LEESPC" startTime="2012-02-11T15:09:47.4430000+13:00" endTime="2012-02-11T15:09:55.8940000+13:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e2c9a27c-02c3-48dc-bcaa-5471d17a8b8e">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:8018/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_hasCorrectSpellingTe.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="LEESPC\WebRequestResponse_hasCorrectSpellingTe.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>

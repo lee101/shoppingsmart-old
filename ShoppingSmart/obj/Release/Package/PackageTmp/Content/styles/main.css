@@ -1,0 +1,186 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	
+	font-family:arial;
+	font-style:normal;
+	
+}
+li
+{
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: #C50F0F;
+}
+
+.horizontal{
+	clear:both;
+	width:150px;
+	position:relative;
+}
+input.small, select.small {
+width: 45px;
+}
+#pagebody{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    margin: 0 auto;
+    padding: 0 0 36px;
+    position: relative;
+    width: 1020px;
+}
+#container {
+    margin: 0 30px;
+    position: relative;
+}
+#main {
+    margin: 20px 0 0;
+    position: relative;
+    width: 645px;
+    float: left;
+}
+#searchoptions {
+    margin: 20px 0 0 0;
+    position: relative;
+    width: 150px;
+    float: left;
+    text-align:center;
+    font-size: 14px;
+    height: 700px;
+    
+        
+}
+#bannerAdd
+{
+    float:left;
+    width:165px;
+    height:650px;
+    margin-top: 45px;
+}
+#SiteNavigation {
+    margin: 0;
+}
+#SiteHeading {
+    color: #333333;
+    font-size: 14px;
+    height: 100px;
+    line-height: 130%;
+    margin: 0;
+    position: relative;
+}
+#genderRadio
+{
+    margin-top:30px;
+}
+#genderRadio label
+{
+    width:115px;
+}
+#colourpicker
+{
+    width:130px;
+    margin-left: 12px;
+}
+#colours
+{
+    margin-top:30px;
+}
+#colours a
+{
+    width:18px;
+    height:18px;
+    margin: 3px 3px 3px 3px;
+    display: inline-block;
+    border:1px solid #AAA;
+    
+}
+#categories
+{
+    position:relative;
+    margin-top:30px;
+}
+#categoriesRadio
+{
+    position:absolute;
+    z-index:1;
+    top:2px;
+    left:132px;
+}
+#categoriesRadio label
+{
+    width:164px;
+}
+#share{
+    display: inline;
+    float: right;
+    margin-top: 35px;
+}
+.productTitle{
+	display:block;
+	height:48px;
+	overflow: hidden;
+		
+}
+.thumbnail {
+    float: left;
+    margin: 5px;
+}
+.clear {
+    clear: both;
+}
+.left {
+	clear: left;
+	
+}
+.price
+{
+    font-weight:bold;
+    color: #000;
+    text-align: center;
+    display: block;
+}
+.product {
+	display: block;
+	border: 1px solid #CCCCCC;
+	padding:5px;
+}
+.product:hover {
+	border: 1px solid #000;
+}
+.product:hover .description { text-decoration: underline; } 
+.productimage
+{
+    text-align:center;
+    display: block;
+    height: 120px;
+}
+.productscompany
+{
+    font-size:75%;
+    color: #000;
+    display: block;
+}
+.right li{
+	display:inline;
+	
+	
+}
+.right p{
+	display:inline;
+}
+.right{
+		
+    float:right;
+    width:50%;
+    text-align:right;
+    margin-right:20px;
+}
+.sorter {
+float: left;
+width: 40%;
+height: 20px;
+}

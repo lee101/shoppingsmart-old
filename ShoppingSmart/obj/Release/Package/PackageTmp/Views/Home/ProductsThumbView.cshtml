@@ -1,0 +1,78 @@
+﻿@model ShoppingSmart.Models.ThumbsModel
+
+@using ShoppingSmart.Utils
+@using ShoppingSmart.Models
+
+<div class="pager">
+    <div class="sorter">
+        
+    </div>
+    <div class="right">
+        <ul>
+             <span>Page</span>
+    @for (int idx=1; idx <= Model.numPages ; idx++)
+    {
+        bool selected = (idx == Model.pageNum);
+        if(idx > 1 && idx < Model.pageNum-3){
+            
+            <li>
+                <span>...</span>
+            </li>
+            idx = Model.pageNum - 4;
+            
+        }
+        else if (idx > Model.pageNum + 3 && idx < Model.numPages)
+        {
+            <li>
+                <span>...</span>
+            </li>
+            idx = Model.numPages - 1;
+        }
+        else if(selected){
+            <li>
+                <span>@idx</span>
+            </li>
+        }
+        else
+        {
+            <li>
+                <a href="javascript:setPageNum(@idx);submitForm();" title="Page @idx">@idx</a>
+            </li>
+        
+        }
+
+    }
+        </ul>
+    </div>
+</div>
+
+
+@{int i = 0;}
+           
+@foreach (product prod in Model.products)
+{ 
+<div class="thumbnail@((i % 4 == 0) ? " left" : "") ">
+				
+		<div class="horizontal">
+			<a href="@prod.url" class="product" title="@prod.title">
+                
+                <span class="productimage">
+                    <span style="border:none;" >
+						<img src="images/small?name=@(HttpUtility.UrlEncode(prod.smallimg))" alt="@prod.title" width="@(prod.smallimgwidth == 0 ? 120 : prod.smallimgwidth)" height="@(prod.smallimgheight == 0 ? 120 : prod.smallimgheight)" />
+					</span>
+                </span>
+				<span class="price">@((prod.price == null) ? "Price Unknown" : ((int)prod.price).ToPriceFormat()) </span>			   
+				<span class="description">
+					<span class="productTitle" href="@prod.url">@prod.title</span>
+				</span>
+				<span  class="productscompany">
+                The Warehouse
+				</span>
+				
+			</a>
+
+        </div>
+
+</div>
+    i++;
+}

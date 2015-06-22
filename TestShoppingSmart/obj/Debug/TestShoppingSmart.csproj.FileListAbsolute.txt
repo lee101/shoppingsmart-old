@@ -1,0 +1,10 @@
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\bin\Debug\TestShoppingSmart.dll
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\bin\Debug\TestShoppingSmart.pdb
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\bin\Debug\EntityFramework.dll
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\bin\Debug\ShoppingSmart.dll
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\bin\Debug\ShoppingSmart.pdb
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\bin\Debug\EntityFramework.xml
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\obj\Debug\TestShoppingSmart.dll
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\obj\Debug\TestShoppingSmart.pdb
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\TestShoppingSmart\bin\Debug\NHunspell.dll

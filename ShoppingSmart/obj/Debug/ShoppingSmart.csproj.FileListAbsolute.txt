@@ -1,0 +1,31 @@
+c:\users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\bin\ShoppingSmart.dll
+c:\users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\bin\ShoppingSmart.pdb
+c:\users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\bin\EntityFramework.dll
+c:\users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\bin\EntityFramework.xml
+c:\users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\obj\Debug\ResolveAssemblyReference.cache
+c:\users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\obj\Debug\ShoppingSmart.dll
+c:\users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\obj\Debug\ShoppingSmart.pdb
+C:\Users\user-000\documents\visual studio 2010\Projects\ShoppingSmart\ShoppingSmart\bin\NHunspell.dll
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\ShoppingSmart.dll
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\ShoppingSmart.pdb
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\EntityFramework.dll
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\log4net.dll
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\SgmlReaderDll.dll
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\EntityFramework.xml
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\obj\Debug\ShoppingSmart.dll
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\obj\Debug\ShoppingSmart.pdb
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\HtmlAgilityPack.dll
+C:\Users\user-000\Desktop\SmoppingSmartTest\ShoppingSmart\bin\Mark.Tidy.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\obj\Debug\ShoppingSmart.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\obj\Debug\ShoppingSmart.pdb
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\ShoppingSmart.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\ShoppingSmart.pdb
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\EntityFramework.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\log4net.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\EntityFramework.xml
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\System.Web.Abstractions.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\System.Web.Mvc.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\System.Web.Routing.dll
+C:\Users\user-000\Desktop\SmoppingSmart 2.0\ShoppingSmart\bin\System.Web.Mvc.xml

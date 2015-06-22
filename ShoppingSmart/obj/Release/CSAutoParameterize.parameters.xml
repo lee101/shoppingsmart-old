@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ApplicationServices-Web.config Connection String" description="ApplicationServices Connection String used in web.config by the application to access the database." defaultvalue="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user-000\\Desktop\\SmoppingSmart\ 2\.0\\ShoppingSmart\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ApplicationServices']/@connectionString" />
+  </parameter>
+  <parameter name="ShoppingSmartConnectionString-Web.config Connection String" description="ShoppingSmartConnectionString Connection String used in web.config by the application to access the database." defaultvalue="Data Source=LEESPC;Initial Catalog=ShoppingSmart;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user-000\\Desktop\\SmoppingSmart\ 2\.0\\ShoppingSmart\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ShoppingSmartConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="ShoppingSmartTestConnectionString-Web.config Connection String" description="ShoppingSmartTestConnectionString Connection String used in web.config by the application to access the database." defaultvalue="Data Source=bamboo.arvixe.com;Initial Catalog=ShoppingSmartTest;Persist Security Info=True;User ID=lee1;Password=FK15bawn" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\user-000\\Desktop\\SmoppingSmart\ 2\.0\\ShoppingSmart\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ShoppingSmartTestConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

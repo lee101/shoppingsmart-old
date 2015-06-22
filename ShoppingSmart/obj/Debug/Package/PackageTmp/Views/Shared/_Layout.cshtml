@@ -1,0 +1,204 @@
+@using ShoppingSmart.Utils
+@using ShoppingSmart.Models
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Shopping Smart - Online Shopping Made Simple</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <link href="/content/styles/reset.css" type="text/css" rel="stylesheet" />
+    <link href="/content/styles/main.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link type="text/css" href="content/styles/custom-theme/jquery-ui-1.8.18.custom.css" rel="Stylesheet" />	
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.8.18.custom.min.js"></script>
+    <script type="text/javascript">
+        function submitForm() {
+            //collect data from form
+            if($("#male")[0].checked){
+                $('input[name=categorieIds]')[0].value+='@(Categorie.MENS.id)';
+            }
+            if($("#female")[0].checked){
+                $('input[name=categorieIds]')[0].value+='@(Categorie.WOMANS.id)';
+            }
+            
+            document.forms[0].submit();
+        };
+        //sets a colour id to the form before being submitted
+        function setColour(id) {
+                $('input[name=colours]')[0].value=id;
+        };
+        
+
+        //setup buttons
+        $(document).ready(function () {
+            
+            $("#anycolour").button();
+            $("#anycolour").click(function(){
+                setColour("");
+                submitForm();
+            });
+            $("#genderRadio").buttonset();
+
+            $("#categorieButton").button({
+                icons:{
+                    secondary: "ui-icon-triangle-1-e"
+                }
+            
+            });
+            $("#categoriesRadio").buttonset();
+
+            $("#male").click(function(){
+               $("#male")[0].checked=true;
+               submitForm();
+            });
+            $("#female").click(function(){
+               $("#female")[0].checked=true;
+               submitForm();
+            });
+            $("#anygender").click(submitForm);
+            //decide which buttons are checked
+            function setRadio(id) {
+                var radio = $('#' + id);
+                radio[0].checked = true;
+                radio.button("refresh");
+            }
+            @{
+                try{
+                    var companieIds = Request["categorieIds"].Split(',');
+                    if (companieIds.Contains(""+Categorie.MENS.id)){
+                        <text>
+                        setRadio("male");
+                        </text>
+                    }
+                    else if (companieIds.Contains(""+Categorie.WOMANS.id)){
+                        <text>
+                        setRadio("female");
+                        </text>
+                    } else {
+                        <text>
+                        setRadio("anygender");
+                        </text>
+                    }
+                } catch(Exception){
+                        <text>
+                        setRadio("anygender");
+                        </text>
+                }
+            }
+
+            
+        
+        });
+            
+            
+       
+    </script>
+</head>
+<body>
+    <div id="pagebody">
+        <div id="container">
+            <div id="SiteHeading">
+                <img src="/content/images/shopping_smart_logo.png" alt="Shopping Smart! Online Shopping made Simple" />
+            </div>
+            <form action="" name="input" method="get">
+            <input type="hidden" name="categorieIds" value="" />
+            <input type="hidden" name="companieIds" value="" />
+            <input type="hidden" name="colours" value="" />
+            
+            <div id="SiteNavigation">
+            </div>
+            <div id="searchoptions">
+                <div id="priceRange">
+                    <label for="minPrice" class="title">Price Range</label>
+                        
+                    <br />
+                    
+                    <input type="text" name="minPrice" value="@((Request["minPrice"] == null) ? "0" : Request["minPrice"])" id="minPrice" maxlength="7"
+                        class="small" onchange="javascript:submitForm();" />
+                    <span>to </span>
+                    <input type="text" name="maxPrice" value="@((Request["maxPrice"] == null) ? "" : Request["maxPrice"])" id="maxPrice" maxlength="10"
+                        class="small" onchange="javascript:submitForm();" />
+                </div>
+                
+                <div id="genderRadio">
+                        <div>
+                            <input type="radio" id="anygender" name="genderRadio" /><label for="anygender">Any Gender</label>
+                        </div>
+                        <div>
+	                        <input type="radio" id="male" name="genderRadio" /><label for="male">Male</label>
+                        </div>
+                        <div>
+	                        <input type="radio" id="female" name="genderRadio" /><label for="female">Female</label>
+                        </div>
+                </div>
+                    
+                <div id="categories">
+                    <div>
+                        <button id="categorieButton" name="categories" /><label for="categorieButton">Categories</label>
+                    </div>
+                    <div id="categoriesPopup">
+                        <div id="categoriesRadio">
+                            <div>
+                                <input type="radio" id="anycategory" name="categoryRadio" /><label for="anycategory">Any Category</label>
+                            </div>
+                            <div>
+	                            <input type="radio" id="tops" name="categoryRadio" /><label for="tops">Tops</label>
+                            </div>
+                            <div>
+	                            <input type="radio" id="jackets" name="categoryRadio" /><label for="jackets">Jackets &amp; Hoodies</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="colours">
+                    <div>
+                        <button id="anycolour" name="colour">Any Colour</button>
+                    </div>
+                    <!--                 -->
+                    <div id="colourpicker">
+                        <a id="red" style="background-color:#C00;" href="javascript:setColour(@(Colour.RED.id));submitForm();" title="red"></a>
+                        <a id="orange" style="background-color:#f68c00;" href="javascript:setColour(@(Colour.ORANGE.id));submitForm();" title="orange"></a>
+                        <a id="yellow" style="background-color:#efff0f;" href="javascript:setColour(@(Colour.YELLOW.id));submitForm();" title="yellow"></a>
+                        <a id="green" style="background-color:#0C0;" href="javascript:setColour(@(Colour.GREEN.id));submitForm();" title="green"></a>
+                        <a id="aqua" style="background-color:#00effc;" href="javascript:setColour(@(Colour.AQUA.id));submitForm();" title="aqua"></a>
+                        <a id="blue" style="background-color:#0050ff;" href="javascript:setColour(@(Colour.BLUE.id));submitForm();" title="blue"></a>
+                        <a id="purple" style="background-color:#f30fff;" href="javascript:setColour(@(Colour.PURPLE.id));submitForm();" title="purple"></a>
+                        <a id="pink" style="background-color:#ff97bc;" href="javascript:setColour(@(Colour.PINK.id));submitForm();" title="pink"></a>
+                        <a id="brown" style="background-color:#915518;" href="javascript:setColour(@(Colour.BROWN.id));submitForm();" title="brown"></a>
+                        <a id="white" style="background-color:#fff;" href="javascript:setColour(@(Colour.WHITE.id));submitForm();" title="white"></a>
+                        <a id="gray" style="background-color:#CCC;" href="javascript:setColour(@(Colour.GRAY.id));submitForm();" title="gray"></a>
+                        <a id="black" style="background-color:#000;" href="javascript:setColour(@(Colour.BLACK.id));submitForm();" title="black"></a>
+                    </div>
+                </div>
+                
+
+                <!--  <input type="submit" value="Submit" />-->
+            </div>
+            <div id="main">
+            @RenderBody()
+                <div class="clear">
+                </div>
+            </div>
+            <div id="bannerAdd">
+                <script type="text/javascript"><!--
+                    google_ad_client = "ca-pub-7026363262140448";
+                    /* thumb adds */
+                    google_ad_slot = "5365685710";
+                    google_ad_width = 120;
+                    google_ad_height = 600;
+                //-->
+                </script>
+                <script type="text/javascript"
+                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
+            </div>
+            <div class="clear">
+            </div>
+            </form>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</body>
+</html>
